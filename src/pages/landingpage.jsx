@@ -1,6 +1,6 @@
 import Herosection from "../componentes/herosection";
 import Services from "../componentes/services";
-import Feature from "../componentes/Feature";
+import Feature from "../componentes/feature";
 import Companyoverview from "../componentes/companyoverview";
 import Joinus from "../componentes/joinus";
 import Contactus from "../componentes/contactus";
