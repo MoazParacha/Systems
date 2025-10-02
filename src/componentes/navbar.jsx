@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { MagnifyingGlassIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
-import img1 from "../assets/img/img1.PNG";
-import img2 from "../assets/img/img2.PNG";
-import img3 from "../assets/img/img3.PNG";
-import img4 from "../assets/img/img4.PNG";
+import img1 from "../assets/img/img1.png";
+import img2 from "../assets/img/img2.png";
+import img3 from "../assets/img/img3.png";
+import img4 from "../assets/img/img4.png";
 
 const Navbar = () => {
   return (
