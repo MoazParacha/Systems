@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/img/Logo.png";
+import logo from "../assets/img/logo.PNG";
 import { MagnifyingGlassIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
-import img1 from "../assets/img/img1.png";
-import img2 from "../assets/img/img2.png";
-import img3 from "../assets/img/img3.png";
-import img4 from "../assets/img/img4.png";
+import img1 from "../assets/img/img1.PNG";
+import img2 from "../assets/img/img2.PNG";
+import img3 from "../assets/img/img3.PNG";
+import img4 from "../assets/img/img4.PNG";
 
 const Navbar = () => {
   return (
     <nav className="bg-black p-4 flex items-center relative z-50">
 
       {/* Logo */}
-      <img src={Logo} className="text-white w-38 pl-10 h-auto" alt="Logo" />
+      <img src={logo} className="text-white w-38 pl-10 h-auto" alt="Logo" />
 
       {/* Navbar Links */}
       <div className="flex pb-1 pl-9 pt-1 gap-9">

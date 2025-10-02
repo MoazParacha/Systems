@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import img15 from "../assets/img/img15.png";
-import img16 from "../assets/img/img16.png";
-import img17 from "../assets/img/img17.png";
-import img18 from "../assets/img/img18.png";
-import img19 from "../assets/img/img19.png";
-import img20 from "../assets/img/img20.png";
+import img15 from "../assets/img/img15.PNG";
+import img16 from "../assets/img/img16.PNG";
+import img17 from "../assets/img/img17.PNG";
+import img18 from "../assets/img/img18.PNG";
+import img19 from "../assets/img/img19.PNG";
+import img20 from "../assets/img/img20.PNG";
 
 const Feature = () => {
   return (
@@ -50,7 +50,7 @@ const Feature = () => {
 
             {/* ✅ Description (Right se aayega) */}
             <motion.p
-              className="absolute bottom-16 left-4 mb-4 pl-4 pr-4 right-4 text-white text-lg font-normal"
+              className="absolute bottom-16 left-4 mb-4 pl-4 pr-4 right-4 text-white text-md font-normal"
               initial={{ opacity: 0, x: 100 }}  // right side se start
               variants={{
                 hover: { opacity: 1, x: 0 },
@@ -84,7 +84,7 @@ const Feature = () => {
               alt="img"
               className="w-full h-full object-cover rounded-lg"
               variants={{
-                hover: { scale: 3, opacity: 0.4 },
+                hover: { scale: 3,  filter:"blur(5px)"  },
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             />
@@ -98,7 +98,7 @@ const Feature = () => {
 
             {/* ✅ Description Right Se */}
             <motion.p
-              className="absolute bottom-4 left-4 pl-4 mb-7 pr-4 right-4 text-white text-lg font-normal"
+              className="absolute bottom-4 left-4 pl-4 mb-7 pr-4 right-4 text-white text-md font-normal"
               initial={{ opacity: 0, x: 100 }}
               variants={{
                 hover: { opacity: 1, x: 0 },
@@ -134,7 +134,7 @@ const Feature = () => {
               alt="img"
               className="w-full h-full object-cover rounded-lg"
               variants={{
-                hover: { scale: 3 },
+                hover: { scale: 3,filter:"blur(10px)" },
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             />
@@ -147,7 +147,7 @@ const Feature = () => {
             </div>
 
             <motion.p
-              className="absolute bottom-36 left-4 pl-4 mb-7 pr-4 right-4 text-white text-lg font-normal"
+              className="absolute bottom-36 left-4 pl-4 mb-7 pr-4 right-4 text-white text-md font-normal"
               initial={{ opacity: 0, x: 100 }}
               variants={{
                 hover: { opacity: 1, x: 0 },
@@ -205,7 +205,7 @@ const Feature = () => {
             </div>
 
             <motion.p
-              className="absolute bottom-0 left-4 pl-4 mb-7 pr-4 pt-30 right-4 text-white text-lg font-normal"
+              className="absolute bottom-0 left-4 pl-4 mb-7 pr-4 pt-30 right-4 text-white text-md font-normal"
               initial={{ opacity: 0, x: 100 }}
               variants={{
                 hover: { opacity: 1, x: 0 },
@@ -251,7 +251,7 @@ const Feature = () => {
             </div>
 
             <motion.p
-              className="absolute bottom-11 left-4 pl-4 mb-7 pr-4 right-4 text-white text-lg font-normal"
+              className="absolute bottom-11 left-4 pl-4 mb-7 pr-4 right-4 text-white text-md  font-normal"
               initial={{ opacity: 0, x: 100 }}
               variants={{
                 hover: { opacity: 1, x: 0 },
@@ -297,7 +297,7 @@ const Feature = () => {
             </div>
 
             <motion.p
-              className="absolute bottom-8 left-4 pl-4 mb-7 pr-4 right-4 text-white text-lg font-normal"
+              className="absolute bottom-8 left-4 pl-4 mb-7 pr-4 right-4 text-white text-md font-normal"
               initial={{ opacity: 0, x: 100 }}
               variants={{
                 hover: { opacity: 1, x: 0 },
