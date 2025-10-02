@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import img15 from "../assets/img/img15.PNG";
-import img16 from "../assets/img/img16.PNG";
-import img17 from "../assets/img/img17.PNG";
-import img18 from "../assets/img/img18.PNG";
-import img19 from "../assets/img/img19.PNG";
-import img20 from "../assets/img/img20.PNG";
+import img15 from "../assets/img/img15.png";
+import img16 from "../assets/img/img16.png";
+import img17 from "../assets/img/img17.png";
+import img18 from "../assets/img/img18.png";
+import img19 from "../assets/img/img19.png";
+import img20 from "../assets/img/img20.png";
 
 const Feature = () => {
   return (
