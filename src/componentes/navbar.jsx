@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// sahi tarika (case match kare)
 import logo from "../assets/img/logo.png";
 import { MagnifyingGlassIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
 import img1 from "../assets/img/img1.PNG";
