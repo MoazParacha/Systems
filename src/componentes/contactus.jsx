@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Contactus = () => {
     return (
-        <div className="text-center p-40">
+        <div className="text-center p-10 sm:p-20 md:p-30 lg:p-40">
             <motion.div
                 initial={{ opacity: 0, y: 100 }}   // start niche aur invisible
                 whileInView={{ opacity:2 , y: 0 }} // jab viewport me aaye to upar aa jaye
@@ -14,8 +14,8 @@ const Contactus = () => {
                 }}
                 viewport={{ once: true }} // ek hi baar chale scroll par
             >
-                <div className="text-7xl font-semibold">How can we help you?</div>
-                <p className="text-2xl mt-4">
+                <div className="text-3xl md:text-6xl lg:text-7xl md:text font-semibold">How can we help you?</div>
+                <p className="text-sm md:text-xl lg:text-2xl mt-4">
                     Are you ready to push boundaries and explore new frontiers of innovation?
                 </p>
             </motion.div>

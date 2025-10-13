@@ -19,7 +19,7 @@ const Feature = () => {
         transition={{
           duration: 0.8,
           ease: "easeInOut",
-        
+          
         }}
         viewport={{ once: false }}
        >

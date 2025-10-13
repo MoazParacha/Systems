@@ -8,7 +8,8 @@ import img4 from "../assets/img/img4.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-black p-4 flex items-center relative z-50">
+    <div>
+      <nav className="bg-black p-4 flex items-center relative z-50 ">
 
       {/* Logo */}
       <img src={logo} className="text-white w-38 pl-10 h-auto" alt="Logo" />
@@ -385,6 +386,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 

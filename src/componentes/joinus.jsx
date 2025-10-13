@@ -29,16 +29,17 @@ return (
         className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-88 text-white z-10"
     >
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-88 text-white z-10">
-        <h1 className="text-4xl md:text-6xl drop-shadow-lg">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl drop-shadow-lg">
           Your next starts right here
         </h1>
         <Link to="/Careers">
             <button className="
+                text-sm md:text-md lg:text-lg
                 mt-6 px-6 py-3 border border-white
-                text-lg rounded-md hover:bg-white 
+                rounded-md hover:bg-white 
                 hover:outline-none hover:ring-4 hover:ring-gray-400 
                 hover:text-black transition duration-300">
-                JOIN US
+                  JOIN US
             </button>
         </Link>
         </div>
