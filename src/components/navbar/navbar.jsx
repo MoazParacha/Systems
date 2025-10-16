@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black px-4 py-3 md:py-4 relative z-50 border-b border-white/10">
-      <div className="mx-auto max-w-7xl flex items-center justify-between">
+      <div className="mx-auto max-w-7xl flex ">
         {/* ---------------- LEFT SIDE ---------------- */}
-        <div className="flex items-center gap-[4px] sm:gap-[6px]">
+        <div className="flex items-center gap-1 md:gap-2">
           {/* Toggle Button - only visible on mobile */}
           <button
             type="button"
@@ -34,7 +34,7 @@ const Navbar = () => {
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsMenuOpen((v) => !v)}
-            className="inline-flex items-center justify-center rounded-md p-1 text-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 transition-colors md:hidden"
+            className="inline-flex items-center justify-center rounded-md text-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 transition-colors md:hidden"
           >
             {/* Hamburger Icon */}
             <svg
@@ -68,7 +68,7 @@ const Navbar = () => {
           </button>
 
           {/* Logo (always visible) */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center ">
             <NavLogo />
           </Link>
         </div>
@@ -96,9 +96,11 @@ const Navbar = () => {
         </div>
 
         {/* ---------------- MOBILE RIGHT ICONS ---------------- */}
-        <div className="md:hidden flex items-center gap-3">
-          <SearchIcon />
-          <GlobeDropdown />
+        <div className="md:hidden flex items-center">
+          <div className="pl-40 flex">
+            <div className=""><SearchIcon /></div>
+            <div><GlobeDropdown /></div>
+          </div>
         </div>
       </div>
 
