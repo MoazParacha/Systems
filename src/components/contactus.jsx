@@ -20,7 +20,7 @@ const Contactus = () => {
                 </p>
             </motion.div>
 
-            <Link to="Contactus">
+            <Link to="Contact">
                 <button
                     style={{ willChange: "transform" }}
                     className="

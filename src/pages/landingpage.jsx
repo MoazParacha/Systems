@@ -1,9 +1,9 @@
-import Herosection from "../componentes/herosection";
-import Feature from "../componentes/feature";
-import Companyoverview from "../componentes/companyoverview";
-import Joinus from "../componentes/joinus";
-import Contactus from "../componentes/contactus";
-import Footer from "../componentes/fotter";
+import Herosection from "../components/herosection";
+import Feature from "../components/feature";
+import Companyoverview from "../components/companyoverview";
+import Joinus from "../components/joinus";
+import Contactus from "../components/contactus";
+
 
 const Landingpage = () => {
     return (
@@ -13,7 +13,6 @@ const Landingpage = () => {
             <Companyoverview />
             <Joinus />
             <Contactus />
-            <Footer />
         </div>
     )
 }
