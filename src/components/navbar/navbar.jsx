@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* ---------------- MOBILE RIGHT ICONS ---------------- */}
         <div className="md:hidden flex items-center">
-          <div className="pl-40 flex">
+          <div className="pl-30 flex">
             <div className=""><SearchIcon /></div>
             <div><GlobeDropdown /></div>
           </div>
