@@ -23,10 +23,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-black px-4 py-3 md:py-4 relative z-50 border-b border-white/10">
-      <div className="mx-auto max-w-7xl flex ">
+    <nav className="px-4 py-3 md:py-4 fixed w-full z-50 bg-transparent border-b border-white/10">
+      <div className="mx-auto max-w-7xl flex items-center">
         {/* ---------------- LEFT SIDE ---------------- */}
-        <div className="flex items-center gap-1 md:gap-2">
+        <div className="flex items-center gap-1 md:gap-2 z-50">
           {/* Toggle Button - only visible on mobile */}
           <button
             type="button"
@@ -41,7 +41,7 @@ const Navbar = () => {
               className={`h-6 w-6 ${isMenuOpen ? "hidden" : "block"}`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              strokeWidth="1.5"
+              strokeWidth="2"
               stroke="currentColor"
             >
               <path
@@ -67,14 +67,14 @@ const Navbar = () => {
             </svg>
           </button>
 
-          {/* Logo (always visible) */}
-          <Link to="/" className="flex items-center ">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
             <NavLogo />
           </Link>
         </div>
 
         {/* ---------------- DESKTOP NAV ---------------- */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           <div className="flex gap-8 pl-13">
             <ServicesDropdown />
             <IndustriesDropdown />
@@ -98,18 +98,28 @@ const Navbar = () => {
         {/* ---------------- MOBILE RIGHT ICONS ---------------- */}
         <div className="md:hidden flex items-center">
           <div className="pl-30 flex">
-            <div className=""><SearchIcon /></div>
-            <div><GlobeDropdown /></div>
+            <div>
+              <SearchIcon />
+            </div>
+            <div>
+              <GlobeDropdown />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* ---------------- MOBILE MENU ---------------- */}
-      <MobileMenu
-        id="mobile-menu"
-        isOpen={isMenuOpen}
-        onNavigate={() => setIsMenuOpen(false)}
-      />
+      {/* ---------------- MOBILE MENU OVERLAY ---------------- */}
+      <div
+        className={`fixed top-15 left-0 h-screen w-screen bg-black/95 backdrop-blur-sm transform transition-transform duration-500 ease-in-out ${
+          isMenuOpen ? "translate-x-0"  : "-translate-x-full" 
+        }`}
+      >
+        <MobileMenu
+          id="mobile-menu"
+          isOpen={isMenuOpen}
+          onNavigate={() => setIsMenuOpen(false)}
+        />
+      </div>
     </nav>
   );
 };
