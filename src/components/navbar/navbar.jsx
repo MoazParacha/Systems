@@ -82,7 +82,7 @@ const Navbar = () => {
             <AboutDropdown />
             <Link
               to="/Careers"
-              className="text-white text-sm hover:text-white/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded pl-40 px-1"
+              className="text-white text-sm  hover:text-white/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded pl-40 px-2"
             >
               Careers
             </Link>

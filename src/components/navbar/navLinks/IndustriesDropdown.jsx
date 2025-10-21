@@ -15,7 +15,7 @@ const IndustriesDropdown = ({ mobile = false, onNavigate }) => {
           onClick={() => setOpen((v) => !v)}
         >
           <span>Industries</span>
-          <span className="ml-2 text-sm">{open ? "▲" : "▼"}</span>
+          <span className="ml-2 text-xl">{open ? "›" : "‹"}</span>
         </button>
         <div className={`pl-3 ${open ? "block" : "hidden"}`}>
           <Link to="/Communications" onClick={onNavigate} className="block text-white/90 text-sm py-2 hover:text-white">Communications</Link>
@@ -28,23 +28,51 @@ const IndustriesDropdown = ({ mobile = false, onNavigate }) => {
   return (
     <div className="relative group">
       <button className="text-white flex items-center text-sm cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded px-1">
-        Industries <span className="ml-2 text-sm">▼</span>
+        Industries <span className="ml-2 text-sm mb-1">⌵</span>
       </button>
 
       <div className="hidden md:block fixed left-0 top-16 w-full bg-white text-black shadow-lg 
         opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-        transition-all duration-300 z-40 h-100 overflow-y-auto">
+        transition-all duration-300 z-40 h-100 overflow-y-auto pl-10">
+          
         <div className="flex">
           <div className="bg-gray-300 w-100 h-100 pl-10 pt-9">
             <div className="text-2xl font-bold">SERVICES</div>
             <img src={img2} className="w-80 h-auto mt-4" alt="img" />
+            <div className="mt-4 text-xl font-semibold">
+              <p>Perfecting the art of financial</p>
+              <p> consolidation</p>
+            </div>
+            <div className="mt-6 text-orange-600 font-semibold hover:underline">
+              <button>LEARN MORE →</button>
+            </div>
           </div>
+          
 
-          <div className="pl-20 pt-10">
-            <Link to="/Communications" className="text-2xl font-bold hover:text-orange-700">Communications</Link>
-            <Link to="/BankingFinancialServices" className="text-2xl font-bold hover:text-orange-700 mt-5 block">
-              Banking & Financial Services
-            </Link>
+          <div className="pl-20 pt-10 flex">
+
+            <div>
+            <div>
+              <Link to="/Communications" className="text-2xl font-demibold hover:text-orange-700">Communications</Link>
+            </div>
+            <div>
+              <Link to="/BankingFinancialServices" className="text-2xl font-demibold hover:text-orange-700 mt-5 block">Banking & Financial Service</Link>
+            </div>
+            <div>
+              <Link to="PublicSector" className="text-2xl font-demibold hover:text-orange-700 mt-5 block">Public Sector</Link>
+            </div>
+            </div>
+
+            <div className="pl-25">
+              <div>
+                <Link to="/Health" className="text-2xl font-demibold hover:text-orange-700">Health</Link>
+              </div>
+              <div>
+                <Link to="/Retail" className="text-2xl font-demibold hover:text-orange-700 mt-5 block">Retail</Link>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
