@@ -89,6 +89,7 @@ const Navbar = () => {
             <InvestorsDropdown />
           </div>
 
+          
           <div className="flex items-center gap-4 pl-2">
             <SearchIcon />
             <GlobeDropdown />
